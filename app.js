@@ -1,6 +1,6 @@
 app.get('/webhook', function(req, res) {
   if (req.query['hub.mode'] === 'subscribe' &&
-      req.query['hub.verify_token'] === <"CALNDRSecretToken">) {
+      req.query['hub.verify_token'] === <"455717953">) {
     console.log("Validating webhook");
     res.status(200).send(req.query['hub.challenge']);
   } else {
