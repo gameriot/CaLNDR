@@ -24,8 +24,8 @@ c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(291): warning C4018: 
 c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(303): warning C4018: '<': signed/unsigned mismatch
 c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(308): warning C4018: '<': signed/unsigned mismatch
 c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(312): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(321): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(330): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(322): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(331): warning C4018: '<': signed/unsigned mismatch
 c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(254): warning C4715: 'finalLogic': not all control paths return a value
   CaLNDR.vcxproj -> C:\Users\Jonah\Desktop\New folder\CaLNDR\Debug\CaLNDR.exe
   CaLNDR.vcxproj -> C:\Users\Jonah\Desktop\New folder\CaLNDR\Debug\CaLNDR.pdb (Partial PDB)
