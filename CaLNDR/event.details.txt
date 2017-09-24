@@ -1,1 +1,18 @@
-['09', '23', 90, 150, 'University of Michigan North Campus, 1230 Murfin Avenue, Ann Arbor, MI, US, 48109', 'MHacks X Buses']['09', '25', 1050, 1110, None, 'Calndr']['09', '27', 300, 360, 'Mc4021', 'FW: UWCLEC Orientation Night Fall 2017']
+09 
+23 
+90 
+150 
+University of Michigan North Campus, 1230 Murfin Avenue, Ann Arbor, MI, US, 48109 
+MHacks X Buses
+09
+25
+1050
+1110
+None
+Calndr
+09
+27
+300
+360
+Mc4021
+FW: UWCLEC Orientation Night Fall 2017

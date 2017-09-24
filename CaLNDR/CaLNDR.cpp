@@ -67,11 +67,11 @@ void calcuateDistancesFixed(vector<Location> &locationVector, vector<int> &dista
 
 int main()
 {
-	Event lunch = { "Lunch", {"273 Packard Street"}, {9, 23, {0, 86}} };
-	Event swimming = { "Swimming", {"3558 Tuckahoe Road, Bloomfield Township, MI, 48301"}, {9, 23, {360,420}} };
-	Event party = { "Pre-Game Party", {"26881 Captains Lane, Franklin, Michigan, 48322"}, {9, 23, {505, 565}} };
-	Event murder = { "Kill everyone" , {"542 Death Street"}, {9, 23, {780, 900}} };
-	vector<Event> fixedCalendar{swimming, party,  murder};
+	ifstream Activity;
+	ifstream Duration;
+	ifstream Address;
+	Activity.open("
+	vector<Event> fixedCalendar{};
 
 	vector<Time> freeTimeandDay = calculateFreeTime(fixedCalendar, 330, 1320);
 
