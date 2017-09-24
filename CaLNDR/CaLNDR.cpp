@@ -318,18 +318,18 @@ vector<fixedTimeDistance> makeDistanceVectorFixed(vector<Event> &calendar, Event
 
 void calculateDistances(vector<vector<Location>> &locationVector, vector<vector<int>> &distanceVector, Event addedEvent) {
 	std::ofstream outfile("Backend.txt");
+	outfile << addedEvent.eventLocation.address;
 	for (int i = 0; i < (locationVector.size()); i++) {
 		outfile << locationVector[i][0].address << "," << locationVector[i][1].address << endl;
 	}	
-	outfile << addedEvent.eventLocation.address;
 	outfile.close();
 }
 
 void calculateDistancesFixed(vector<Location> &locationVector, vector<int> &distanceVector, Event addedEvent) {
 	std::ofstream outfile("BackendFixed.txt");
+	outfile << addedEvent.eventLocation.address;
 	for (int i = 0; i < (locationVector.size()); i++) {
 		outfile << locationVector[i].address << endl;
 	}
-	outfile << addedEvent.eventLocation.address;
 	outfile.close();
 }
