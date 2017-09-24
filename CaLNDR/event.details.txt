@@ -1,1 +1,22 @@
-['09', '23', 90, 150, 'University of Michigan North Campus, 1230 Murfin Avenue, Ann Arbor, MI, US, 48109', 'MHacks X Buses']['09', '25', 1050, 1110, None, 'Calndr']['09', '27', 300, 360, 'Mc4021', 'FW: UWCLEC Orientation Night Fall 2017']
+<<<<<<< HEAD
+09
+23
+90
+150
+University of Michigan North Campus, 1230 Murfin Avenue, Ann Arbor, MI, US, 48109
+MHacks X Buses
+09
+25
+1050
+1110
+None
+Calndr
+09
+27
+300
+360
+Mc4021
+FW: UWCLEC Orientation Night Fall 2017']
+=======
+'09\n''23\n''90\n''150\n''University of Michigan North Campus, 1230 Murfin Avenue, Ann Arbor, MI, US, 48109\n''MHacks X Buses\n''09\n''25\n''1050\n''1110\n''None\n''Calndr\n''09\n''27\n''300\n''360\n''Mc4021\n''FW: UWCLEC Orientation Night Fall 2017\n'
+>>>>>>> 4dba3cf782437400167e17e40f50a81ed706fb73

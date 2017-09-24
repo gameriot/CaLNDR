@@ -69,12 +69,26 @@ int main()
 {
 	string line;
 	vector<string> lines;
+	vector<Event> fixedCalendar;
 	ifstream eventDetails("event.details.txt");
+
 	while (getline(eventDetails, line)) {
-		cout << line;
+		lines.push_back(line);
 	}
-	Event party, danec;
-	vector<Event> fixedCalendar{ party, danec };
+	eventDetails.close();
+
+	int month, date, startTime, endTime;
+	string name, address;
+	for (int i = 0; i < (lines.size()/6); i++) {
+		month = stoi(lines[0 + (6 * i)]);
+		date = stoi(lines[1 + (6 * i)]);
+		startTime = stoi(lines[2 + (6 * i)]);
+		endTime = stoi(lines[3 + (6 * i)]);
+		address = lines[4 + (6 * i)];
+		name = lines[5 + (6 * i)];
+		Event tempEvent = { name, address, {month, date, {startTime, endTime}} };
+		fixedCalendar.push_back(tempEvent);
+	}
 
 	ifstream Activity;
 	ifstream Duration;
@@ -102,7 +116,6 @@ int main()
 	vector<freeTime> finalFreeTimeWithLocation = addLocationTags(finalTimeSpans, fixedCalendar);
 
 	//finalLogic(addedEvent, fixedCalendar, 45, finalFreeTimeWithLocation);
-	cout << addedEvent.eventLocation.address;
     return 0;
 }
 
@@ -181,7 +194,7 @@ Event finalLogic(Event &addedEvent, vector<Event> &calendar, int locationTimeRan
 	vector<freeTimeDistance> distances = makeDistanceVector(freeTimeWithinRange, addedEvent);
 	vector<fixedTimeDistance> distancesFixed = makeDistanceVectorFixed(calendar, addedEvent);
 	for (int i = 0; i < distances.size(); i++) {
-		if (locationTimeRange >= distances[i].distancePre || locationTimeRange > distances[i].distancePost) {
+		if (locationTimeRange >= distances[i].distancePre || locationTimeRange >= distances[i].distancePost) {
 			freeTimeWithinRange.push_back(finalFilteredFreeTimeWithLocation[i]);
 		}
 	}	
