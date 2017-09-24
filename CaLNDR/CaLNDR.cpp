@@ -115,7 +115,7 @@ int main()
 	vector<Time> finalTimeSpans = filterInvalidTimeSpan(freeTimeandDay, addedEvent.eventTime.time);
 	vector<freeTime> finalFreeTimeWithLocation = addLocationTags(finalTimeSpans, fixedCalendar);
 
-	//finalLogic(addedEvent, fixedCalendar, 45, finalFreeTimeWithLocation);
+	finalLogic(addedEvent, fixedCalendar, 45, finalFreeTimeWithLocation);
     return 0;
 }
 
@@ -191,7 +191,7 @@ vector<Time> filterInvalidTimeSpan(vector<Time> freeTime, timeRange eventTimeRan
 Event finalLogic(Event &addedEvent, vector<Event> &calendar, int locationTimeRange, vector<freeTime> finalFilteredFreeTimeWithLocation) {
 	vector<freeTime> freeTimeWithinRange;
 	vector<Event> fixedTimeWithinRange;
-	vector<freeTimeDistance> distances = makeDistanceVector(freeTimeWithinRange, addedEvent);
+	vector<freeTimeDistance> distances = makeDistanceVector(finalFilteredFreeTimeWithLocation, addedEvent);
 	vector<fixedTimeDistance> distancesFixed = makeDistanceVectorFixed(calendar, addedEvent);
 	for (int i = 0; i < distances.size(); i++) {
 		if (locationTimeRange >= distances[i].distancePre || locationTimeRange >= distances[i].distancePost) {
