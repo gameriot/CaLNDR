@@ -7,14 +7,6 @@ serviceurl = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=imp
 
 f = open('backend.txt','r')
 
-
-
-
-
-
-
-
-
 while True:
     start = input('Enter location: ')
     end = input('Enter location: ')
