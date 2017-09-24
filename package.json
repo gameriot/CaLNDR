@@ -1,0 +1,22 @@
+{
+  "name": "calndr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gameriot/CaLNDR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gameriot/CaLNDR/issues"
+  },
+  "homepage": "https://github.com/gameriot/CaLNDR#readme",
+  "dependencies": {
+    "firebase": "^4.4.0"
+  }
+}
