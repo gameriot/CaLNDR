@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gameriot/CaLNDR#readme",
   "dependencies": {
-    "firebase": "^4.4.0"
+    "firebase": "^4.4.0",
+    "fs": "0.0.1-security"
   }
 }
