@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 09 
 23 
 90 
 150 
 University of Michigan North Campus, 1230 Murfin Avenue, Ann Arbor, MI, US, 48109 
+=======
+09
+23
+90
+150
+University of Michigan North Campus, 1230 Murfin Avenue, Ann Arbor, MI, US, 48109
+>>>>>>> 5b6ba27b92d6baa5221a338c1126aca3c3660d4c
 MHacks X Buses
 09
 25
@@ -15,4 +23,8 @@ Calndr
 300
 360
 Mc4021
+<<<<<<< HEAD
 FW: UWCLEC Orientation Night Fall 2017
+=======
+FW: UWCLEC Orientation Night Fall 2017
+>>>>>>> 5b6ba27b92d6baa5221a338c1126aca3c3660d4c
