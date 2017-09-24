@@ -62,8 +62,8 @@ Event finalLogic(Event &addedEvent, vector<Event> &calendar, int locationRange, 
 vector<freeTimeDistance> makeDistanceVector(vector<freeTime> &finalFreeTimeWithLocations, Event &addedEvent);
 vector<fixedTimeDistance> makeDistanceVectorFixed(vector<Event> &calendar, Event addedEvent);
 vector<freeTime> addLocationTags(vector<Time> &freeTime, vector<Event> & calendar);
-void calculateDistances(vector<vector<Location>> &locationVector, vector<vector<int>> &distanceVector);
-void calcuateDistancesFixed(vector<Location> &locationVector, vector<int> &distanceVector);
+void calculateDistances(vector<vector<Location>> &locationVector, vector<vector<int>> &distanceVector, Event addedEvent);
+void calculateDistancesFixed(vector<Location> &locationVector, vector<int> &distanceVector, Event addedEvent);
 
 int main()
 {
@@ -115,7 +115,7 @@ int main()
 	vector<Time> finalTimeSpans = filterInvalidTimeSpan(freeTimeandDay, addedEvent.eventTime.time);
 	vector<freeTime> finalFreeTimeWithLocation = addLocationTags(finalTimeSpans, fixedCalendar);
 
-	finalLogic(addedEvent, fixedCalendar, 45, finalFreeTimeWithLocation);
+	finalLogic(addedEvent, fixedCalendar, 15, finalFreeTimeWithLocation);
     return 0;
 }
 
@@ -282,7 +282,7 @@ vector<freeTimeDistance> makeDistanceVector(vector<freeTime> &finalFreeTimeWithL
 	for (int i = 0; i < finalFreeTimeWithLocations.size(); i++) {
 		locationVector.push_back({ finalFreeTimeWithLocations[i].eventLocationPre, finalFreeTimeWithLocations[i].eventLocationPost });
 	}
-	calculateDistances(locationVector, tempDistance);
+	calculateDistances(locationVector, tempDistance, addedEvent);
 	freeTimeDistance temp_distance;
 	for (int i = 0; i < finalFreeTimeWithLocations.size(); i++) {
 		temp_distance.eventTime = finalFreeTimeWithLocations[i].eventTime;
@@ -303,7 +303,7 @@ vector<fixedTimeDistance> makeDistanceVectorFixed(vector<Event> &calendar, Event
 	for (int i = 0; i < calendar.size(); i++) {
 		locationVector.push_back(calendar[i].eventLocation);
 	}
-	calcuateDistancesFixed(locationVector, tempDistance);
+	calculateDistancesFixed(locationVector, tempDistance, addedEvent);
 	fixedTimeDistance temp_distance;
 	for (int i = 0; i < calendar.size(); ++i) {
 		temp_distance.eventTime = calendar[i].eventTime;
@@ -316,18 +316,20 @@ vector<fixedTimeDistance> makeDistanceVectorFixed(vector<Event> &calendar, Event
 	return distances;
 }
 
-void calculateDistances(vector<vector<Location>> &locationVector, vector<vector<int>> &distanceVector) {
+void calculateDistances(vector<vector<Location>> &locationVector, vector<vector<int>> &distanceVector, Event addedEvent) {
 	std::ofstream outfile("Backend.txt");
 	for (int i = 0; i < (locationVector.size()); i++) {
 		outfile << locationVector[i][0].address << "," << locationVector[i][1].address << endl;
-	}
+	}	
+	outfile << addedEvent.eventLocation.address;
 	outfile.close();
 }
 
-void calcuateDistancesFixed(vector<Location> &locationVector, vector<int> &distanceVector) {
+void calculateDistancesFixed(vector<Location> &locationVector, vector<int> &distanceVector, Event addedEvent) {
 	std::ofstream outfile("BackendFixed.txt");
 	for (int i = 0; i < (locationVector.size()); i++) {
 		outfile << locationVector[i].address << endl;
 	}
+	outfile << addedEvent.eventLocation.address;
 	outfile.close();
 }
