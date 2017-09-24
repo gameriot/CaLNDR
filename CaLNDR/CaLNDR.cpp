@@ -67,20 +67,42 @@ void calcuateDistancesFixed(vector<Location> &locationVector, vector<int> &dista
 
 int main()
 {
+	string line;
+	vector<string> lines;
+	ifstream eventDetails("event.details.txt");
+	while (getline(eventDetails, line)) {
+		cout << line;
+	}
+	Event party, danec;
+	vector<Event> fixedCalendar{ party, danec };
+
 	ifstream Activity;
 	ifstream Duration;
 	ifstream Address;
-	Activity.open("
-	vector<Event> fixedCalendar{};
 
+	string eventName, eventTime, eventLocation;
+	Activity.open("Activity.txt");
+	while (getline(Activity, eventName)) {
+	}
+	Activity.close();
+
+	Duration.open("Duration.txt");
+	while (getline(Duration, eventTime)) { 
+	}
+	Duration.close();
+
+	Address.open("Address.txt");
+	while (getline(Address, eventLocation)) {
+	}
+	Address.close();
+
+	Event addedEvent{ eventName, eventLocation, {fixedCalendar[0].eventTime.month, fixedCalendar[0].eventTime.date, {0, stoi(eventTime)}} };
 	vector<Time> freeTimeandDay = calculateFreeTime(fixedCalendar, 330, 1320);
-
-	vector<Time> finalTimeSpans = filterInvalidTimeSpan(freeTimeandDay, lunch.eventTime.time);
-
+	vector<Time> finalTimeSpans = filterInvalidTimeSpan(freeTimeandDay, addedEvent.eventTime.time);
 	vector<freeTime> finalFreeTimeWithLocation = addLocationTags(finalTimeSpans, fixedCalendar);
 
-	finalLogic(lunch, fixedCalendar, 45, finalFreeTimeWithLocation);
-
+	//finalLogic(addedEvent, fixedCalendar, 45, finalFreeTimeWithLocation);
+	cout << addedEvent.eventLocation.address;
     return 0;
 }
 
@@ -284,18 +306,15 @@ vector<fixedTimeDistance> makeDistanceVectorFixed(vector<Event> &calendar, Event
 void calculateDistances(vector<vector<Location>> &locationVector, vector<vector<int>> &distanceVector) {
 	std::ofstream outfile("Backend.txt");
 	for (int i = 0; i < (locationVector.size()); i++) {
-		outfile << locationVector[i][0].address << endl;
-		outfile << locationVector[i][1].address << endl;
+		outfile << locationVector[i][0].address << "," << locationVector[i][1].address << endl;
 	}
-
 	outfile.close();
 }
 
 void calcuateDistancesFixed(vector<Location> &locationVector, vector<int> &distanceVector) {
 	std::ofstream outfile("BackendFixed.txt");
-	for (int i = 0; i < (locationVector.size()-1); i++) {
+	for (int i = 0; i < (locationVector.size()); i++) {
 		outfile << locationVector[i].address << endl;
-		outfile << locationVector[1].address << endl;
 	}
 	outfile.close();
 }
