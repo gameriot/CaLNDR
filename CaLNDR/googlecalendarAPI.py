@@ -1,4 +1,3 @@
-
 from __future__ import print_function
 import httplib2
 import os
@@ -109,8 +108,8 @@ def main():
         event_details_list.append(location)
         event_details_list.append(summary)
         print(event_details_list)
-        repr(event_details_list)
-        f.write(repr(event_details_list))
+        for x in event_details_list:
+            f.write(str(x) + "\n")
     f.close()
 
 
