@@ -1,30 +1,30 @@
 ﻿  CaLNDR.cpp
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(88): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(94): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(101): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(108): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(116): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(121): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(138): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(147): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(160): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(168): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(174): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(182): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(189): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(198): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(209): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(223): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(224): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(229): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(245): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(250): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(254): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(266): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(271): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(275): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(284): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(294): warning C4018: '<': signed/unsigned mismatch
-c:\users\jonah\source\repos\calndr\calndr\calndr.cpp(218): warning C4715: 'finalLogic': not all control paths return a value
-  CaLNDR.vcxproj -> C:\Users\Jonah\source\repos\CaLNDR\Debug\CaLNDR.exe
-  CaLNDR.vcxproj -> C:\Users\Jonah\source\repos\CaLNDR\Debug\CaLNDR.pdb (Partial PDB)
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(89): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(95): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(102): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(109): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(117): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(122): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(139): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(148): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(161): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(169): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(175): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(183): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(190): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(199): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(210): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(224): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(225): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(230): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(247): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(252): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(256): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(268): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(273): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(277): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(286): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(296): warning C4018: '<': signed/unsigned mismatch
+c:\users\jonah\desktop\new folder\calndr\calndr\calndr.cpp(219): warning C4715: 'finalLogic': not all control paths return a value
+  CaLNDR.vcxproj -> C:\Users\Jonah\Desktop\New folder\CaLNDR\Debug\CaLNDR.exe
+  CaLNDR.vcxproj -> C:\Users\Jonah\Desktop\New folder\CaLNDR\Debug\CaLNDR.pdb (Partial PDB)
