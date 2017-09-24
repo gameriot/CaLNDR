@@ -320,7 +320,7 @@ void calculateDistances(vector<vector<Location>> &locationVector, vector<vector<
 	std::ofstream outfile("Backend.txt");
 	outfile << addedEvent.eventLocation.address << endl;
 	for (int i = 0; i < (locationVector.size()); i++) {
-		outfile << locationVector[i][0].address << "," << locationVector[i][1].address << endl;
+		outfile << locationVector[i][0].address << ";" << locationVector[i][1].address << endl;
 	}	
 	outfile.close();
 }

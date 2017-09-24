@@ -1,4 +1,4 @@
 541 Thompson St
-University of Michigan North Campus, 1230 Murfin Avenue, Ann Arbor, MI, US, 48109,None
-None,Mc4021
-Mc4021,
+University of Michigan North Campus, 1230 Murfin Avenue, Ann Arbor, MI, US, 48109;None
+None;Mc4021
+Mc4021;
